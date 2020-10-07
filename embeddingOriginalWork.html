@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Embedding Original Work</title>
+		<style>
+			.component {
+				height: 500px;
+				width: 888px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>A YouTube video that plays starting at minute 3 and shows English captions.</p>
+			<iframe class="component" src="https://www.youtube.com/embed/ttuQqpCpGSM?start=180&cc_lang_pref=en&cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div>
+			<p>A video that plays using the HTML5 video tag.</p>
+			<video class="component" src="flower.mp4" controls></video>
+		</div>
+		<div>
+			<p>An audio that plays using the HTML5 audio tag.</p>
+			<audio src="shimogezhe.mp3" controls></audio>
+		</div>
+		<div>
+			<p>A PDF document using the object tag.</p>
+			<object class="component" data="https://www.gstatic.com/policies/terms/pdf/20200331/ba461e2f/google_terms_of_service_en.pdf" type="application/pdf"></object>
+		</div>
+		<div>
+			<p>An RSS feed.</p>
+			<script src="http://feedroll.com/rssviewer/feed2js.php?src=https%3A%2F%2Fblog.cloudflare.com%2Frss%2F&chan=title&num=10&utf=y"></script>
+			<noscript>JavaScript required.</noscript>
+		</div>
+	</body>
+</html>
