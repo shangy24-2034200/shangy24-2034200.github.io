@@ -1,0 +1,78 @@
+a {
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+body {
+	background-image: url("moroccan-flower-dark.png");
+}
+
+h3 {
+	color: #FFBC00;
+	font-family: "Passion One";
+	font-size: 40px;
+	margin-bottom: 0;
+}
+
+p {
+	color: white;
+	font-family: "Arial";
+	font-weight: bold;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.box {
+	background-color: #8E41D5;
+	border: solid 8px black;
+	text-align: center;
+}
+
+#bow {
+	color:#FFBC00;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#Content {
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	width: 700px;
+}
+
+#Header {
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+
+	/* 5 more CSS styles */
+	border-radius: 30px;
+	box-shadow: 0 0 5px black;
+	cursor: not-allowed;
+	opacity: .75;
+	text-shadow: 0 0 5px black;
+}
+
+#Header h1 {
+	color: #FFBC00;
+	font-family: "Passion One";
+	font-size: 60px;
+	font-weight: bold;
+}
+
+#LeftNav {
+	float: left;
+	padding-bottom: 8px;
+	width: 400px;
+}
+
+#LeftNav ul {
+	color: white;
+}
