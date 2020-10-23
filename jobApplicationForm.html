@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<title>Job Application</title>
+		<style>
+			* {
+				box-sizing: border-box;
+				outline: none;
+			}
+			:root {
+				--border: 1px solid rgba(0,0,0,.2);
+				--theme-color: rgb(0,102,204);
+			}
+			body {
+				font-family: sans-serif;
+				font-size: 16px;
+				margin: 0 auto;
+				max-width: 600px;
+				padding: 0 15px;
+				-webkit-user-select: none;
+				user-select: none;
+			}
+			fieldset {
+				border: var(--border);
+				border-radius: 10px;
+				margin: 10px 0;
+			}
+			h1 {
+				color: var(--theme-color);
+				font-size: 30px;
+				margin: 15px 0;
+				text-align: center;
+				text-transform: uppercase;
+			}
+			input[type=submit] {
+				background-color: var(--theme-color);
+				border: var(--border);
+				border-radius: 10px;
+				color: white;
+				display: block;
+				font-size: inherit;
+				margin: 0 auto;
+				padding: 10px 25px;
+				transition: all .25s;
+			}
+			input[type=submit]:hover {
+				box-shadow: 0 0 10px var(--theme-color);
+			}
+			input[type=submit]:active {
+				opacity: .8;
+			}
+			legend {
+				color: var(--theme-color);
+				font-weight: bold;
+			}
+			textarea {
+				height: 100px;
+				resize: none;
+			}
+			.input {
+				border: none;
+				border-bottom: var(--border);
+				border-radius: 0;
+				display: block;
+				font-family: inherit;
+				font-size: inherit;
+				margin-bottom: 10px;
+				padding: 5px 0;
+				transition: all .25s;
+				width: 100%;
+			}
+			.input:focus {
+				border-bottom: 2px solid var(--theme-color);
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Job Application</h1>
+		<form action="http://gclass.alexburner.com/formtest.php" method="POST">
+			<fieldset>
+				<legend>Profile</legend>
+				<div>
+					<label for="name">Name:</label>
+					<input id="name" class="input" name="name" type="text">
+				</div>
+				<div>
+					<label for="password">Password:</label>
+					<input id="password" class="input" name="password" type="password" autocomplete="current-password">
+				</div>
+				<div>
+					<label>Gender:</label>
+					<input id="male" name="gender" type="radio" value="Male">
+					<label for="male">Male</label>
+					<input id="female" name="gender" type="radio" value="Female">
+					<label for="female">Female</label>
+					<input id="other-gender" name="gender" type="radio" value="Other">
+					<label for="other-gender">Other</label>
+				</div>
+				<div>
+					<label>Graduation Year:</label>
+					<select name="graduation-year">
+						<option>2021</option>
+						<option>2022</option>
+						<option>2023</option>
+						<option>2024</option>
+					</select>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Questionnaire</legend>
+				<label for="reason">Why do you want to fill out this application?</label><br>
+				<textarea id="reason" class="input" name="reason"></textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Resume</legend>
+				<input id="resume" name="resume" type="file">
+			</fieldset>
+			<p>
+				<input id="agree" name="agree" type="checkbox" required>
+				<label for="agree">I have read and agreed to the terms.</label>
+			</p>
+			<p>
+				<input type="submit" value="Submit">
+			</p>
+		</form>
+	</body>
+</html>
