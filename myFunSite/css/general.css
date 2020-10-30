@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+*::placeholder {
+	color: white;
+}
+body {
+	background-color: black;
+	color: white;
+	margin: 0;
+}
+main button,
+main input,
+main textarea {
+	background-color: rgba(255,255,255,.25);
+	border: none;
+	border-radius: 10px;
+	color: inherit;
+	display: block;
+	font-family: inherit;
+	padding: 10px 15px;
+}
+main button {
+	margin: 20px auto 0;
+	padding: 10px 30px;
+	text-transform: uppercase;
+}
+main textarea {
+	height: 300px;
+	resize: none;
+}
+nav {
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+nav a {
+	border-radius: 10px;
+	color: inherit;
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	transition: all .25s;
+}
+nav a:hover {
+	background-color: rgba(255,255,255,.25);
+}
+nav a:active {
+	background-color: rgba(255,255,255,.5);
+}
+nav li {
+	float: right;
+	overflow: hidden;
+}
+nav li:first-of-type {
+	margin-right: 10px;
+}
+ul {
+	padding-inline-start: 0;
+}
+.bg-img {
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	opacity: .75;
+	position: fixed;
+	top: 0;
+	transform: scale(1.1);
+	width: 100%;
+	z-index: -1;
+}
